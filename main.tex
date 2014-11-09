@@ -1,0 +1,81 @@
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{ifthen}
+
+% conditional compilation flags
+\newboolean{thesis-abstract}
+\setboolean{thesis-abstract}{true}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Xiaohui}
+\familyname{Liu}
+%\centering{Xiaohui Liu}
+%\title{Curriculum Vitae}               % optional, remove the line if not wanted
+\address{5057 Woodward Avenue, Suite 3209}{Detroit, Michigan 48202}    % optional, remove the line if not wanted
+%\address{77 E. Delaware Av, Room 202, University of Delaware}{Newark, DE 19706}    % optional, remove the line if not wanted
+\mobile{+1 313-318-8421}                    % optional, remove the line if not wanted
+%\phone{302--831--6339}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{xiaohui@wayne.edu}                      % optional, remove the line if not wanted
+\extrainfo{\url{http://www.cs.wayne.edu/xliu}} % optional, remove the line if not wanted
+%\extrainfo{Skype:  keith.trnka} % optional, remove the line if not wanted
+%\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+\newcommand{\bibauthor}[1]{\textbf{#1}}
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\maketitle
+\input{title}
+
+\input{research}
+
+\input{education}
+
+\input{publication}
+
+\input{patent}
+
+\input{project}
+
+%\input{techreport}
+
+\input{skill}
+
+\input{award}
+
+\input{experience}
+
+\input{activity}
+
+\input{reference}
+
+\end{document}
+
+

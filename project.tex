@@ -1,0 +1,30 @@
+% software development section
+
+\section{Selected Software Development}
+\cventry{2014}{PRK-based Scheduling Protocol (PRKS)}{}{}{}{
+PRKS guarantees the reliability of a wireless link is no less than requirement in the presence of interference while maximizing throughput. This is done by identifying the optimal parameter K in the PRK interference model, which in turn is formulated as a distributed control problem. \textbf{Numerous underpinnings of TinyOS, such as execution model and resource sharing mechanism, intend to shield programmers from many complexities of programming a concurrent system, which comes at the expense of nondeterministic execution. To cater to PRKS's needs of predictable timing, I tailor these fundamental underlying services.} More specifically, there are five primary challenges in implementation: (1) the controller is distributed, and nodes can have inconsistent view of plant states due to diffusion delay; (2) the protocol is based on TDMA and requires global time synchronization, but the de facto time synchronization protocol FTSP for TelosB is buggy and yields intolerable synchronization errors; (3) most protocol codes run in asynchronous mode, causing concurrency issues; (4) TinyOS' task execution model makes execution delay very nondeterministic; (5) many computations are intensive and highly varying. \textbf{I single-handedly tackled these challenges as well as other challenges posed by extreme memory constraints of TelosB motes using TinyOS. In addition to PRKS, I also implemented 4 other protocols for comparison from the ground up.} Through measurement study in sensor network testbed NetEye and Indriya, we observe that PRKS enables predictably high link reliability (e.g., 95\%) in different network and environmental conditions without a priori knowledge of these conditions, and, through local distributed coordination, PRKS achieves a channel spatial reuse very close to what is enabled by the state-of-the-art centralized scheduler while ensuring the required link reliability, and improves substantially over all other protocols in terms of reliability, delay, and throughput.
+%Preliminary results on the NetEye sensor network testbed establish the correctness of my implementation.
+}
+
+\cventry{2012}{Multi-Timescale Adaptation (MTA) Routing Protocol}{}{}{}{
+MTA identifies minimal energy paths that can meet probabilistic deadlines of real-time traffic, given the notorious dynamics and uncertainties of path delays in wireless networks. \textbf{TinyOS is not designed with real-time support in mind, so it's not surprising to find many of its features detrimental to real-time routing, such as task and split-phase APIs, to name a few. Many core APIs are altered in a systematic way to enable real-time networking without devising an entirely new real-time OS.} More precisely, the following obstacles appear in realizing it on resource-scarce TelosB motes running TinyOS: (1) the standard TinyOS task queue is served in FIFO order so urgent tasks can be postponed by less urgent ones, causing deadline misses that can otherwise be avoided; (2) the default CC2420 radio stack is non-blocking and synchronous, making critical codes like packet transmission and reception susceptible to excessive delay; (3) tracking relative deadlines of traffic necessitates time synchronization across a link while there are bugs in the default packet-level time synchronization for TelosB, especially under heavy load; (4) the number of paths in a directed-acyclic-graph (DAG) maintained by MTA increases exponentially with the network diameter, making it impossible to store all of them in memory to choose the optimal path from. \textbf{Despite the aforementioned obstacles, I managed to implement the whole protocol independently. Besides MTA itself, I also implemented 4 other protocols and 7 MTA variants from scratch.} Two testbeds of 127+ motes have verified MTA's significant advantages over the state of the art for a variety of settings.
+}
+
+%both the default CC2420 and CC2420X radio stack
+%                % arguments 3 to 6 are optional
+%%\cventry{year--year}{Job title}{Employer}{City}{}{Description}                % arguments 3 to 6 are optional
+%\subsection{Proficiencies}
+%\cventry{10 years}{Perl}{}{}{}{
+%I usually prefer Perl for non-graphical implementations.
+%The word prediction simulations for my dissertation are written in Perl, as well as much of the dissertation support code.
+%I also have experience writing web applications with Perl/CGI and DBI.
+%}
+%\cventry{12 years}{Java}{}{}{}{
+%I prefer Java for applications with graphical interfaces, such as user evaluation of word prediction.
+%I also tend to use Java for XML processing, such as analysis of log files from dissertation simulations.
+%Also, I used Java and the JADE library to implement the vehicle-to-grid coalition server and client.
+%}
+%\cventry{10 years}{C++}{}{}{}{I use C++ mainly for academic purposes --- teaching second-semester programming/design and third-semester data structures as well as certain graduate classes (graphics).}
+%
+%\cventry{familiarity}{Javascript, Python, Lua}{}{}{}{I've written small proof-of-concept applications in several other languages. Many of my systems involving web data display use Javascript to accomplish small tasks.
+%}
