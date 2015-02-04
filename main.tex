@@ -16,6 +16,8 @@
 % customize the enumerate environments (i.e. enumerate, itemize, ...)
 \usepackage{enumitem}
 \setlist{nolistsep}
+\usepackage{etoolbox}
+\apptocmd{\thebibliography}{\setlength{\itemsep}{0pt}}{}{}
 
 % A custom version of the \cventry command that supports large itemized lists
 % inside argument #7 (the custom cvitemize lists should be used!)
@@ -90,25 +92,21 @@ leftmargin=\hintscolumnwidth+\separatorcolumnwidth+\labelwidth+\labelsep}
 
 \input{education}
 
-%\input{award}
-
-\input{publication}
+\input{award}
 
 \input{patent}
 
-%\input{experience}
+\input{publication}
 
 \input{project}
-
-\input{award}
 
 \input{skill}
 
 \input{experience}
 
-\input{activity}
+%\input{activity}
 
-\input{reference}
+%\input{reference}
 
 \end{document}
 
