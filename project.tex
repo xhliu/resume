@@ -1,4 +1,4 @@
-\section{Projects (selected)}
+\section{Selected Projects}
 \subsection{Physical-Ratio-K based Scheduling Protocol (PRKS)}
 \cvitem{}{
 PRKS guarantees the reliability of a wireless link is no less than requirement in the presence of interference while maximizing throughput.
@@ -11,6 +11,18 @@ MTA identifies minimal energy paths that can meet probabilistic deadlines of rea
 I managed to independently implement the whole protocol, its seven variants, and four other protocols from scratch on sensors using TinyOS. Two testbeds of 127+ sensors have verified MTA's significant advantages over the state of the art for a variety of settings, improving deadline success ratio by 89\% and reducing transmission cost by a factor of 9.7. Code is at \url{https://github.com/xhliu/mta}.
 }
 
+\subsection{Open Source Community Participation}
+\cvitem{}{
+TinyOS is the de facto operating system for low-power wireless devices, such as those used in sensor networks, personal area networks.
+%,ubiquitous computing,  smart buildings, and smart meters
+\url{http://www.tinyos.net}. 
+%Thanks to its open source nature, I have acquainted myself with many inner workings of OS: communication (two radio stacks, cc2420 and cc2420x), networking (CSMA/CS MAC and network layer), kernel scheduling,  resource arbitration, timer, SPI/UART, watchdog, and sensing. 
+Besides active discussions in the mailing list, I have also reported several bugs, including:
+\begin{itemize}
+	\item Patch accepted: fixing bug to set default tx power in CC2420X, a radio communication stack for chip CC2420. \url{https://github.com/sallai/tinyos-main/commit/974ff870551d6fcc86f44e311dcbfd0fb71dbc94}
+	\item Patch accepted: fixing bug in duplicate detection in CTP, the default routing protocol in TinyOS, send queue. \url{https://www.millennium.berkeley.edu/pipermail/tinyos-help/2010-March/045095.html}
+\end{itemize}
+}
 %both the default CC2420 and CC2420X radio stack
 %                % arguments 3 to 6 are optional
 %%\cventry{year--year}{Job title}{Employer}{City}{}{Description}                % arguments 3 to 6 are optional
