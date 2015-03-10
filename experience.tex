@@ -1,18 +1,25 @@
 \section{Experience}
 \cventry{4/12 -- 4/14}{Physical-Ratio-K based Scheduling Protocol (PRKS)}{Research Assistant}{Wayne State University}{MI}{
-PRKS guarantees the reliability of a wireless link is no less than requirement in the presence of interference while maximizing throughput. I
+PRKS is the first-ever practical distributed scheduler to 
+ensure reliability of wireless communication while maximizing throughput, eliminating the fundamental decade-old hidden-terminal issue.
+% in wireless communication. is no less than requirement in the presence of interference while maximizing throughput.
 \begin{itemize}
-	\item Implemented, single-handedly , PRKS, its two variants, and four state-of-the-art protocols from the ground up, on resource-constrained sensors using TinyOS. The source code is publicly available at \url{https://github.com/xhliu/prks}.
-	\item Carried out measurements in two sensor network testbeds, each consisting of 127+ sensors, and verified that PRKS enables predictably high link reliability (95\% vs 0\% in others).
+	\item Designed the architecture of PRKS: split code into reusable encapsulated components, grouped components wth coupled functionalities, and organized groups in a tree hierarchy.
+	\item Implemented, single-handedly, PRKS, its two variants, and four state-of-the-art protocols from scratch, on sensors with only 48kB ROM, 10kB RAM, and 8MHz 16-bit MCU using TinyOS. The source code ($\sim$\textbf{58,000} lines) is available at \url{https://github.com/xhliu/prks}.
+	%\item Debugged and ensured the correctness of these distributed concurrent protocols running in two wireless sensor network testbeds of 127+ nodes, with serial port access only.
+	\item Deployed these protocols in two sensor network testbeds of 127+ nodes.
+	\item Increased link reliability from as low as 0\% in the state of the art to 95\% in PRKS.
 \end{itemize}
 }
 
 \cventry{9/09 -- 3/12}{Multi-Timescale Adaptation (MTA) Routing Protocol}{Research Assistant}{Wayne State University}{MI}{
-MTA identifies minimal energy paths that meet probabilistic deadlines of real-time traffic, taming dynamics and uncertainties of path delays in wireless networks. I
+MTA is the best distributed routing protocol for delivering probabilistic real-time traffic.
+% identifies minimal energy paths that meet probabilistic deadlines of real-time traffic, taming dynamics and uncertainties of path delays in wireless networks.
 \begin{itemize}
-	\item Implemented, independently, the whole protocol, its seven variants, and four other protocols from scratch on sensors using TinyOS. Code is at \url{https://github.com/xhliu/mta}.
-	\item Verified MTA's significant advantages over the state of the art for a variety of settings, in two testbeds of 127+ sensors, improving deadline success ratio by 89\% and reducing transmission cost by a factor of 9.7.
-\end{itemize}	
+	\item Implemented, independently, MTA, its seven variants, and four other protocols from the ground up in TinyOS. Code ($\sim$\textbf{16,000} lines) is at \url{https://github.com/xhliu/mta}.
+	\item Modified TinyOS kernals systematically to make code run concurrently and enable real-time computing, including radio stack, time synchronization, and resource arbitration.
+	\item Increased deadline success ratio by 89\% and reduced transmission cost by a factor of 9.7, shown by measurements in two testbeds of 127+ nodes.
+\end{itemize}
 }
 
 %\cventry{1/10 -- 1/12}{President}{ACM Student Chapter at Wayne State University}{}{}{
@@ -20,21 +27,24 @@ MTA identifies minimal energy paths that meet probabilistic deadlines of real-ti
 %}
 
 \cventry{2/09 -- 5/09}{LifeCode}{Technical Team Member}{LifeCode Health}{MI}{
-LifeCode is a remote health monitoring system. A wearable sensor measures biometric parameters such as heartbeat rate and transmits the data to a mobile phone. The phone processes and displays the data locally, which also uploads it to servers so health care professionals can access it via a web interface. I
+LifeCode is a remote health monitoring system to compete in Microsoft Imagine Cup.
+%A wearable sensor measures biometric parameters such as heartbeat rate and transmits the data to a mobile phone. The phone processes and displays the data locally, which also uploads it to servers so health care professionals can access it via a web interface.
 \begin{itemize}
-	\item Built a Windows mobile phone application in C\# to receive and display real-time heartbeat rates collected by sensors and transmitted to the phone via Bluetooth.
+	\item Built a Windows mobile phone application in C\# to receive and display real-time heartbeat rates collected by wearable sensors and transmitted to the phone via Bluetooth.
 \end{itemize}
 }
 
 \cventry{11/08 -- 5/09}{CSC1000 Ticketing System}{System Administrator}{Wayne State University}{MI}{
-Students in lab course CSC1000 report machine breakdowns by filing tickets in this web-based system, where IT personnel can track and update the status of each ticket. I
+Students in lab course CSC1000 report machine breakdowns by filing tickets in this web-based system, where IT personnel can track and update the status of each ticket.
 \begin{itemize}
-	\item Modified database schema and wrote PHP code to enable users to insert, update, delete, search, and dump tickets via a web interface using the Linux, Apache, MySQL, and PHP (LAMP) stack.
+	\item Modified database schema and wrote PHP code to enable users to insert, update, delete, search, and dump tickets online
+	% via a web interface 
+	using the Linux, Apache, MySQL, and PHP (LAMP) stack.
 \end{itemize}
 }
 
 \cventry{12/07 -- 3/08}{Microsoft Forefront Security (MFS)}{Software Engineer Intern}{Wicresoft Company}{China}{
-MFS is a business antivirus software product that can be controlled over the network. I
+MFS is a business antivirus software product that can be controlled over the network.
 \begin{itemize}
 	\item Wrote test cases and tested MFS on different Windows families, architectures, and languages.
 	\item Automated tests using MS-DOS scripting to run MFS on remote machines with various above configurations.
@@ -42,7 +52,7 @@ MFS is a business antivirus software product that can be controlled over the net
 }
 
 \cventry{9/06 -- 11/07}{Websites}{Chief Development Officer}{Trinity Studio}{China}{
-Trinity Studio is a studio I co-founded with three classmates, building websites for small businesses, government agencies, and universities. I
+Trinity Studio is a studio I co-founded with three classmates, building websites for small businesses, government agencies, and universities.
 \begin{itemize}
 	\item Designed database schema using SQL Server and Access.
 	\item Developed back end using ASP, IIS, and ODBC.

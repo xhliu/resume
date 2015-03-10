@@ -55,7 +55,7 @@ leftmargin=\hintscolumnwidth+\separatorcolumnwidth+\labelwidth+\labelsep}
 \setboolean{thesis-abstract}{true}
 
 % adjust the page margins
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.84]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 \AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
@@ -79,6 +79,14 @@ leftmargin=\hintscolumnwidth+\separatorcolumnwidth+\labelwidth+\labelsep}
 %\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
 
 \newcommand{\bibauthor}[1]{\textbf{#1}}
+
+% xl: company specific
+% data analysis
+\newboolean{is_rocketfuel}
+\setboolean{is_rocketfuel}{false}%true}
+% math
+\newboolean{is_finance}
+\setboolean{is_finance}{false}%true}
 
 
 %----------------------------------------------------------------------------------
