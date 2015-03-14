@@ -1,24 +1,26 @@
 \section{Experience}
-\cventry{4/12 -- 4/14}{Physical-Ratio-K based Scheduling Protocol (PRKS)}{Research Assistant}{Wayne State University}{MI}{
-PRKS is the first-ever practical distributed scheduler to 
-ensure reliability of wireless communication while maximizing throughput, eliminating the fundamental decade-old hidden-terminal issue.
+\cventry{4/12 -- 4/14}{Research Assistant}{Wayne State University}{Michigan}{}{
+The patent-pending Physical-Ratio-K based Scheduling Protocol (PRKS) is the first-ever practical distributed scheduling algorithm to ensure reliability of wireless communication while maximizing throughput. %, eliminating the fundamental decade-old hidden-terminal issue.
 % in wireless communication. is no less than requirement in the presence of interference while maximizing throughput.
 \begin{itemize}
 	\item Designed the architecture of PRKS: split code into reusable encapsulated components, grouped components wth coupled functionalities, and organized groups in a tree hierarchy.
-	\item Implemented, single-handedly, PRKS, its two variants, and four state-of-the-art protocols from scratch, on sensors with only 48kB ROM, 10kB RAM, and 8MHz 16-bit MCU using TinyOS. The source code ($\sim$\textbf{58,000} lines) is available at \url{https://github.com/xhliu/prks}.
+	\item Implemented, single-handedly, PRKS, its two variants, and four state-of-the-art protocols from scratch, on sensors with merely \textit{10kB} RAM
+	%48kB ROM, 10kB RAM, and 8MHz 16-bit MCU
+	 using TinyOS. The source code ($\sim$\textbf{\textit{58,000}} lines) is available at \url{https://github.com/xhliu/prks}.
 	%\item Debugged and ensured the correctness of these distributed concurrent protocols running in two wireless sensor network testbeds of 127+ nodes, with serial port access only.
-	\item Deployed these protocols in two sensor network testbeds of 127+ nodes.
+	%\item Deployed these protocols in two sensor network testbeds 
+	\item Debugged, \textit{without gdb}, these complex distributed protocols in two multi-hop dynamic testbeds of 127+ sensors and fixed non-repeatable and timing-dependent bugs caused by race conditions and inconsistent distributed states.
 	\item Increased link reliability from as low as 0\% in the state of the art to 95\% in PRKS.
 \end{itemize}
 }
 
-\cventry{9/09 -- 3/12}{Multi-Timescale Adaptation (MTA) Routing Protocol}{Research Assistant}{Wayne State University}{MI}{
-MTA is the best distributed routing protocol for delivering probabilistic real-time traffic.
+\cventry{9/09 -- 3/12}{Research Assistant}{Wayne State University}{Michigan}{}{
+Multi-Timescale Adaptation (MTA) Routing Protocol is the best distributed routing algorithm for delivering probabilistic real-time traffic.
 % identifies minimal energy paths that meet probabilistic deadlines of real-time traffic, taming dynamics and uncertainties of path delays in wireless networks.
 \begin{itemize}
-	\item Implemented, independently, MTA, its seven variants, and four other protocols from the ground up in TinyOS. Code ($\sim$\textbf{16,000} lines) is at \url{https://github.com/xhliu/mta}.
-	\item Modified TinyOS kernals systematically to make code run concurrently and enable real-time computing, including radio stack, time synchronization, and resource arbitration.
-	\item Increased deadline success ratio by 89\% and reduced transmission cost by a factor of 9.7, shown by measurements in two testbeds of 127+ nodes.
+	\item Implemented, independently, MTA, its seven variants, and four other protocols from the ground up in TinyOS. Code ($\sim$\textbf{\textit{16,000}} lines) is at \url{https://github.com/xhliu/mta}.
+	\item Modified TinyOS kernals systematically to make code run concurrently and enable real-time computing, including radio communication stack, time synchronization, and resource arbitration.
+	\item Increased deadline success ratio by 89\% and reduced transmission cost by a factor of 9.7, shown in two testbeds of 127+ nodes.
 \end{itemize}
 }
 
@@ -26,7 +28,7 @@ MTA is the best distributed routing protocol for delivering probabilistic real-t
 %\emph{\textbf{Responsibilities}}: organized programming competitions and invited speakers to give technical talks.
 %}
 
-\cventry{2/09 -- 5/09}{LifeCode}{Technical Team Member}{LifeCode Health}{MI}{
+\cventry{2/09 -- 5/09}{Technical Team Member}{LifeCode Health}{Michigan}{}{
 LifeCode is a remote health monitoring system to compete in Microsoft Imagine Cup.
 %A wearable sensor measures biometric parameters such as heartbeat rate and transmits the data to a mobile phone. The phone processes and displays the data locally, which also uploads it to servers so health care professionals can access it via a web interface.
 \begin{itemize}
@@ -34,24 +36,22 @@ LifeCode is a remote health monitoring system to compete in Microsoft Imagine Cu
 \end{itemize}
 }
 
-\cventry{11/08 -- 5/09}{CSC1000 Ticketing System}{System Administrator}{Wayne State University}{MI}{
-Students in lab course CSC1000 report machine breakdowns by filing tickets in this web-based system, where IT personnel can track and update the status of each ticket.
+\cventry{11/08 -- 5/09}{System Administrator}{Wayne State University}{Michigan}{}{
+Students in lab course CSC1000 report machine breakdowns by filing tickets in a web-based system. %, where IT personnel can track and update the status of each ticket.
 \begin{itemize}
-	\item Modified database schema and wrote PHP code to enable users to insert, update, delete, search, and dump tickets online
-	% via a web interface 
-	using the Linux, Apache, MySQL, and PHP (LAMP) stack.
+	\item Designed database schema and implemented the ticketing system using the Linux, Apache, MySQL, and PHP (LAMP) stack, enabling users to insert, update, delete, search, and dump tickets online.
 \end{itemize}
 }
 
-\cventry{12/07 -- 3/08}{Microsoft Forefront Security (MFS)}{Software Engineer Intern}{Wicresoft Company}{China}{
-MFS is a business antivirus software product that can be controlled over the network.
+\cventry{12/07 -- 3/08}{Software Engineer Intern}{Wicresoft Company}{China}{}{
+Microsoft Forefront Security (MFS) is a business antivirus software product that can be controlled over the network.
 \begin{itemize}
 	\item Wrote test cases and tested MFS on different Windows families, architectures, and languages.
 	\item Automated tests using MS-DOS scripting to run MFS on remote machines with various above configurations.
 \end{itemize}
 }
 
-\cventry{9/06 -- 11/07}{Websites}{Chief Development Officer}{Trinity Studio}{China}{
+\cventry{9/06 -- 11/07}{Chief Development Officer}{Trinity Studio}{China}{}{
 Trinity Studio is a studio I co-founded with three classmates, building websites for small businesses, government agencies, and universities.
 \begin{itemize}
 	\item Designed database schema using SQL Server and Access.
