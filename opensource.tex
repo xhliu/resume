@@ -1,31 +1,16 @@
 \section{Open Source Community Participation}
-%\subsection{Physical-Ratio-K based Scheduling Protocol (PRKS)}
-%\cvitem{}{
-%PRKS guarantees the reliability of a wireless link is no less than requirement in the presence of interference while maximizing throughput.
-%I single-handedly implemented PRKS, its two variants, and four state-of-the-art protocols from the ground up, on resource-constrained sensors using TinyOS. Through measurement studies in two sensor network testbeds, each consisting of 127+ sensors, we observed that PRKS enables predictably high link reliability (95\% vs 0\% in others) . The source code is publicly available at \url{https://github.com/xhliu/prks}.
-%}
-%
-%\subsection{Multi-Timescale Adaptation (MTA) Routing Protocol}
-%\cvitem{}{
-%MTA identifies minimal energy paths that can meet probabilistic deadlines of real-time traffic, given the notorious dynamics and uncertainties of path delays in wireless networks.
-%I managed to independently implement the whole protocol, its seven variants, and four other protocols from scratch on sensors using TinyOS. Two testbeds of 127+ sensors have verified MTA's significant advantages over the state of the art for a variety of settings, improving deadline success ratio by 89\% and reducing transmission cost by a factor of 9.7. Code is at \url{https://github.com/xhliu/mta}.
-%}
-%
-%\subsection{Open Source Community Participation}
 \cvitem{}{
 TinyOS is the de facto operating system for low-power wireless devices, such as those used in sensor networks and personal area networks.
 %,ubiquitous computing,  smart buildings, and smart meters
 \url{http://www.tinyos.net}. 
 %Thanks to its open source nature, 
 %I have become familiar with its inner workings, e.g., communication (radio stack cc2420 and cc2420x), networking (MAC and network layer), kernel scheduling,  resource arbitration, timer, SPI, UART, watchdog, and sensing. 
-%Besides active discussions in the mailing list, 
-I have reported several bugs, including:
+Besides active discussions in the mailing list, 
+I have reported several system-level bugs which have been incorporated into the latest distributions, including:
 \begin{itemize}
-	\item Patch accepted: fixing bug to set default tx power in cc2420x.
-	%, a radio communication stack for chip CC2420.
+	\item Patch accepted: fixing bug to set default tx power in cc2420x, a radio communication stack for chip CC2420.
 	\url{https://github.com/sallai/tinyos-main/commit/974ff870551d6fcc86f44e311dcbfd0fb71dbc94}
-	\item Patch accepted: fixing bug in duplicate detection in CTP.
-	%, the default routing protocol in TinyOS, send queue.
+	\item Patch accepted: fixing bug in duplicate detection in CTP send queue, the default routing/collection protocol in TinyOS.
 	\url{https://www.millennium.berkeley.edu/pipermail/tinyos-help/2010-March/045095.html}
 \end{itemize}
 }
